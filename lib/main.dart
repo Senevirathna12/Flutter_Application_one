@@ -13,13 +13,21 @@ class MyApp extends StatelessWidget {
       title: "app demo",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter App") ,
+          title: Text("Flutter App"),
           backgroundColor: Colors.orangeAccent,
         ),
-        body:Icon(Icons.add) ,
+        body: Center(
+          child: Container(
+            height: 250,
+            width: 250,
+            child: Center(child: Text("data")),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(250),
+              color: Colors.blueAccent,
+            ),
+          ),
+        ),
       ),
     );
   }
 }
-
-
